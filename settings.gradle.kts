@@ -15,3 +15,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Taxi"
 include(":app")
+include(":data")
+include(":domain")
