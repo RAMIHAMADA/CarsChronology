@@ -14,6 +14,7 @@ interface ApiService {
     @GET("car/{id}")
     fun getCar(@Path("id") carId: Long): retrofit2.Call<CarDataResponse>
 
-    @GET("cat/{id}/posts")
-    fun getListPost(@Path("id") cardId: Long): retrofit2.Call<PostDataResponse>
+    @GET("car/{id}/posts")
+    fun getListPost(@Path("id") carId: Long): retrofit2.Call<PostDataResponse>
 }
+
