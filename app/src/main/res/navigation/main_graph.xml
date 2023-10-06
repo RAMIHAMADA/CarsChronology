@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.rami.taxi.ui.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_carListFragment"
+            app:destination="@id/carListFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/main_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/carListFragment"
+        android:name="com.rami.taxi.ui.main_screen.CarListFragment"
+        android:label="fragment_car_list"
+        tools:layout="@layout/fragment_car_list" >
+        <action
+            android:id="@+id/action_carListFragment_to_detailsCarFragment"
+            app:destination="@id/detailsCarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsCarFragment"
+        android:name="com.rami.taxi.ui.detalis_screen.DetailsCarFragment"
+        android:label="fragment_details_car"
+        tools:layout="@layout/fragment_details_car" />
+</navigation>
