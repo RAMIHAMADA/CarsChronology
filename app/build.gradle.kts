@@ -81,6 +81,3 @@ dependencies {
     // dots for VP
     implementation("com.tbuonomo:dotsindicator:4.3")
 }
-kapt {
-    correctErrorTypes = true
-}

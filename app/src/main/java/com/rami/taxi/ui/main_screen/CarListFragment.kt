@@ -74,7 +74,7 @@ class CarListFragment : Fragment(R.layout.fragment_car_list) {
                 viewModel.getListCar(viewModel.screenState.value.page + 1)
             }
             prevPage.setOnClickListener {
-                viewModel.getListCar(viewModel.screenState.value.page + 1)
+                viewModel.getListCar(viewModel.screenState.value.page - 1)
             }
         }
     }

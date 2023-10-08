@@ -31,7 +31,7 @@
                 android:layout_marginEnd="@dimen/_8sdp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:src="@drawable/picture_for_review" />
+                tools:src="@drawable/ic_car_def" />
 
             <TextView
                 android:id="@+id/user_name"
