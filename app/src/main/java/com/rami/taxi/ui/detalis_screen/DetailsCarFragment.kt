@@ -15,8 +15,10 @@ import com.rami.taxi.R
 import com.rami.taxi.adapters.PostAdapter
 import com.rami.taxi.adapters.ViewPagerAdapter
 import com.rami.taxi.databinding.FragmentDetailsCarBinding
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
+@AndroidEntryPoint
 class DetailsCarFragment : Fragment(R.layout.fragment_details_car) {
     private val binding: FragmentDetailsCarBinding by viewBinding()
     private val viewModel: DetailsCarViewModel by viewModels()
@@ -26,6 +28,9 @@ class DetailsCarFragment : Fragment(R.layout.fragment_details_car) {
     private lateinit var postAdapter: PostAdapter
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        viewModel.updateState(args.carId)
+        initObserver()
+        initAdapters()
     }
 
     private fun initObserver() {

@@ -12,8 +12,10 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import com.rami.taxi.R
 import com.rami.taxi.adapters.CarListAdapter
 import com.rami.taxi.databinding.FragmentCarListBinding
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
+@AndroidEntryPoint
 class CarListFragment : Fragment(R.layout.fragment_car_list) {
     private val binding: FragmentCarListBinding by viewBinding()
     private val viewModel: CarListViewModel by viewModels()

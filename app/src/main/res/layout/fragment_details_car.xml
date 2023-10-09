@@ -68,12 +68,14 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/head_title" />
 
-            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
                 android:id="@+id/dots_indicator"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/_16sdp"
+                app:dampingRatio="0.5"
                 app:dotsColor="@color/grey"
+                app:dotsSpacing="@dimen/_6sdp"
                 app:dotsCornerRadius="@dimen/_8sdp"
                 app:dotsSize="@dimen/_12sdp"
                 app:layout_constraintEnd_toEndOf="parent"
