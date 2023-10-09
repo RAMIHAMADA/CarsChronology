@@ -26,6 +26,7 @@
 
             <TextView
                 android:id="@+id/prev_page"
+                style="@style/Text.Casual.14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="@dimen/_10sdp"
@@ -38,6 +39,7 @@
 
             <TextView
                 android:id="@+id/number_page"
+                style="@style/Text.Casual.24"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_16sdp"
@@ -50,6 +52,7 @@
 
             <TextView
                 android:id="@+id/next_page"
+                style="@style/Text.Casual.14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="@dimen/_10sdp"
